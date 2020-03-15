@@ -29,4 +29,11 @@ public class Employer extends AbstractEntity {
 
     public Employer(){}
 
+    public List<Job> getJobs() {
+        return jobs;
+    }
+
+    public void setJobs(List<Job> jobs) {
+        this.jobs = jobs;
+    }
 }

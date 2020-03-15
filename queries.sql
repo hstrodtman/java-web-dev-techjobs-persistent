@@ -15,4 +15,10 @@ WHERE location = "St. Louis City";
 
 ## Part 3: Test it with SQL
 
+DROP TABLE job;
+
 ## Part 4: Test it with SQL
+
+SELECT name, description
+FROM skill WHERE id IN (Select skills_id FROM job_skills)
+order by name;
